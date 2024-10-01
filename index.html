@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme=dark>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/components/header.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/utils/utils.css">
+    <link rel="stylesheet" href="./src/styles/components/footer.css">
+    <link rel="icon" type="img/x-icon" href="./assets/icon/dev.png">
+
+    <title> Portifólio Ryan </title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logomarca">
+                <a href="/src/page/thankyou.html">
+                    <img src="./assets/img/logomarca.png">
+                </a> 
+            </div>
+            
+            <ul class="link">
+                 <a href="#home">Home</a> 
+                 <a href="#Sobre-Mim">Sobre mim</a> 
+                 <a href="#minhas-habilidades">Habilidades</a> 
+                 <a href="#projetos">Projetos</a> 
+                <div class="animation start-home"></div>
+            </ul>
+
+            <div class="icons-container">
+                <a href=""> <img src="./assets/icon/curriculo.png" id="curriculo-icon" class="icon-header"> </a>
+                <a href="https://github.com/Allysson-ryan" target="_blank" rel="noopener noreferrer"> <img src="./assets/icon/github-icon.png" id="github-icon" class="icon-header"> </a>
+                <a href="https://www.linkedin.com/in/allysson-ryan" target="_blank" rel="noopener noreferrer"> <img src="./assets/icon/linkedin-icon.png" id="linkedin-icon" class="icon-header"> </a>
+            </div>
+            <div class="tema-claro">
+                <button id="bd-theme" class="btn dropdown-toggle" type="button"> <img src="./assets/icon/sol-icon.png" class="bi my-1 theme-icon-active"> </button>
+            </div>
+
+            <div class="menu-amburguer">
+                <button onclick="menuShow()"> <img src="./assets/icon/menu-amburguer.png" alt="menu-amburguer" class="icon"> </button>
+            </div>
+        </div>
+
+
+        <div class="menu-mobile">
+            <div class="nav-itens">
+                <ul class="links">
+                    <li> <a href="#home">Home</a> </li>
+                    <li> <a href="#Sobre-Mim">Sobre mim</a> </li>
+                    <li> <a href="#minhas-habilidades">Habilidades</a> </li>
+                    <li> <a href="#projetos">Projetos</a> </li>
+    
+                    <div class="contatos">
+                        <a href=""> <img src="./assets/icon/curriculo-icon-black.png" id="curriculo-icon" class="icon-header"> </a>
+                        <a href="https://github.com/Allysson-ryan" target="_blank" rel="noopener noreferrer"> <img src="./assets/icon/github-icon-black.png" id="github-icon" class="icon-header"> </a>
+                        <a href="https://www.linkedin.com/in/allysson-ryan" target="_blank" rel="noopener noreferrer"> <img src="./assets/icon/linkedin-icon-black.png" id="linkedin-icon" class="icon-header"> </a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+<!-- HOME -->    
+    <div id="home">
+        <div class="container-imgPerfil">
+            <img src="./assets/img/perfilft.jpg" alt="img-perfil" class="fotoDePerfil">
+        </div>
+
+        <h1 class="my-name"> Allysson Ryan </h1>
+
+        <div class="tecnologia">
+            <h4> Desenvolvedor Front-end </h4>
+        </div>
+
+        <div class="resumoSobreMim">
+            <p> Como desenvolvedor front-end apaixonado, especialista em HTML, CSS, JavaScript e os mais recentes frameworks do mercado adoro enfrentar desafios e criar interfaces de usuário intuitivas e atraentes. Transformo ideias em experiências digitais únicas que encantam e envolvem os usuários. </p>
+        </div>
+
+        <div class="box-iconMouse">
+            <a href="#Sobre-Mim">
+                <img src="./assets/icon/mouse-icon.png" id="icon-Mouse">
+            </a>
+        </div>
+
+    </div>
+
+
+
+<!-- SOBRE MIM-->  
+    <div id="Sobre-Mim">
+        <h1 class="titulos">Sobre mim</h1>
+
+        <div class="box-subtitulos">
+            <h4 class="subtitulos"> Conheça-me </h4>
+        </div>
+
+        <div class="texto-sobre-mim">
+            <p> 
+                Sou um desenvolvedor autodidata com uma paixão por criar experiências interativas e envolventes na web. Minha jornada começou com pequenos projetos pessoais, que me permitiram desenvolver uma base sólida e a confiança necessária para enfrentar desafios mais complexos.
+                <br><br>
+                Minha abordagem ao desenvolvimento web combina um olhar crítico para o design e a funcionalidade. Tenho experiência em utilizar frameworks modernos como <span style="color: #afdff5;">ReactJs</span> para criar aplicações dinâmicas e <span style="color: #afdff5;">responsivas</span>, garantindo que cada projeto seja otimizado para uma experiência de usuário perfeita
+                <br><br>
+                Além do desenvolvimento técnico, valorizo a importância da <span style="color: #afdff5;">organização</span>  e da <span style="color: #afdff5;">colaboração em equipe</span>. Sou uma pessoa altamente organizada, o que me permite gerenciar eficazmente meu tempo e projetos, assegurando que cada tarefa seja concluída com eficiência e dentro do prazo. Estou ansioso para continuar minha jornada como desenvolvedor front-end e explorar novas fronteiras no desenvolvimento web
+            </p>
+        </div>
+
+        <div class="box-botaoSobreMim" style="display: none;">
+            <a href="">
+                <button class="botao-sobreMim"> Meu Currículo </button>
+            </a>
+        </div>
+
+    </div>
+
+
+
+    <!-- MINHAS HABILIDADES -->  
+    <div id="minhas-habilidades">
+
+        <h1 class="titulos"> Minhas Habilidades </h1>
+
+        <div class="skills-container">
+            <div class="column">
+                <div class="skils">
+                    <img src="./assets/img/html-img.png">
+                    <p> HTML </p>
+                </div>
+                <div class="skils">
+                    <img src="./assets/img/css-img.png">
+                    <p> CSS </p>
+                </div>
+                <div class="skils">
+                    <img src="./assets/img/javascript-img.png">
+                    <p> JAVASCRIPT </p>
+                </div>
+                <div class="skils">
+                    <img src="./assets/img/react-img.png">
+                    <p> ReactJs </p>
+                </div>
+                <div class="skils">
+                    <img src="./assets/img/nodejs-img.png">
+                    <p> NODEJS </p>
+                </div>
+                <div class="skils">
+                    <img src="./assets/img/api-img.png">
+                    <p> USO DE API </p>
+                </div>
+                <div class="skils">
+                    <img src="./assets/img/git-img.png">
+                    <p> Git </p>
+                </div>
+                <div class="skils">
+                    <img src="./assets/img/github-img.png">
+                    <p> GITHUB </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- PROJETOS -->  
+    <div id="projetos">
+        <h1 class="titulos">Projetos</h1>
+
+        <div class="container-projetos">
+            <div class="box-projects">
+                <div class="projeto">
+                    <img src="./assets/img/capaProjetos/Capas petVida.png">
+                    <h4 class="nome do projeto1"> PetVida petshop </h4>
+                    <div class="box-resenhaDoSite">
+                        <p class="resenhaDoSite"> petshop idealizado e desenvolvido por mim com o objetivo de aplicar e consolidar meus aprendizados em HTML, CSS e JavaScript. a função dele é comprar produtos, agendar consultas, banho e tosa, além de hospedagem de animais. O site ainda está em desenvolvimento.</p>
+                    </div>
+                    <p class="tecnologiasUsadas"> Hrml / Css / Javascript </p>
+                    <div class="box-botaoVerDetalhes">
+                        <a href="https://petvida.netlify.app/"> <button> Ver funcionando </button> </a>
+                        <a href="https://github.com/Allysson-ryan/petshop-PetVida"> <button class="btn-repositorioGithub"> Github </button> </a>
+                    </div>
+                </div>
+
+                <div class="projeto">
+                    <img src="./assets/img/capaProjetos/capa conversor de moedas.png">
+                    <h4 class="nome do projeto1"> Conversor de moedas </h4>
+                    <div class="box-resenhaDoSite">
+                        <p class="resenhaDoSite">Este projeto é um conversor de moedas desenvolvido com HTML, CSS e JavaScript, usando a API Exchangerate para taxas de câmbio. É totalmente responsivo e inclui ícones de bandeiras para cada moeda, oferecendo uma interface intuitiva e atraente.</p>
+                    </div>
+                    <p class="tecnologiasUsadas"> Hrml / Css / Javascript / API </p>
+                    <div class="box-botaoVerDetalhes">
+                        <a href="https://conversormoedas1934.netlify.app/"> <button> Ver funcionando </button> </a>
+                        <a href="https://github.com/Allysson-ryan/Conversor-de-moedas"> <button class="btn-repositorioGithub"> Github </button> </a>
+                    </div>
+                </div>
+                
+
+                <div class="projeto">
+                    <img src="./assets/img/capaProjetos/capa jockenpô.png">
+                    <h4 class="nome do projeto1"> Game JokenPô </h4>
+                    <div class="box-resenhaDoSite">
+                        <p class="resenhaDoSite">É um jogo de Jokenpô (pedra, papel e tesoura) desenvolvido com HTML, CSS e JavaScript. O jogador escolhe entre pedra, papel ou tesoura e enfrenta a máquina, que faz uma escolha aleatória. O design é totalmente responsivo.</p>
+                    </div>
+                    <p class="tecnologiasUsadas"> Hrml / Css / Javascript </p>
+                    <div class="box-botaoVerDetalhes">
+                        <a href="https://jokenpo-game1.netlify.app/"> <button> Ver funcionando </button> </a>
+                        <a href="https://github.com/Allysson-ryan/jogo-JokenPo"> <button class="btn-repositorioGithub"> Github </button> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="link-VerTodos">
+            <a href="./src/page/projetos meus/meusProjetos.html"> 
+                <p> Ver Todos </p> 
+                <img src="./assets/icon/angulo-direito.png"> 
+            </a>
+        </div>
+    </div>
+
+
+
+<!-- CONTATOS -->  
+    <div id="contatos">
+        <section>
+            <h1 class="titulos"> Entre em contato </h1>
+
+            <div class="box-subtitulos">
+                <h4 class="subtitulos">  </h4>
+            </div>
+
+            <form action="https://api.staticforms.xyz/submit" method="POST">
+                <label for="nome"> Nome </label>
+                <input type="text" placeholder="Nome Completo" name="name" style="color: black;" required>
+                <label for="email"> Email </label>
+                <input type="email" name="email" placeholder="exemplo@gmail.com" style="color: black;" required>
+                <label for="mensage"> Mensagem </label>
+                <textarea name="message" cols="30" rows="10" style="resize: none; color: black;" required></textarea>
+
+                <input type="hidden" name="redirectTo" value="http://localhost:5501/src/page/thankyou.html"> <!--o valor vai ser o link da página html agradecendo por o contato -->
+                <input type="hidden" name="accessKey" value="de709dd1-7c78-49a2-8058-043a0151a36f"> 
+
+                <button class="button-contatos" type="submit"> Entrar em contato </button>
+            </form> 
+        </section>
+    </div>
+
+    <button class="btn-voltarAoTopo"> voltar ao topo </button>
+
+<!-- RODAPÈ -->  
+    <footer>
+
+        <h1> Vamos </h1>
+        <h1> Trabalhar Juntos - </h1>
+        <hr>
+        <p> © 2024 todos os direitos reservados a Allysson Ryan. </p>
+
+    </footer>
+
+
+    <script src="./src/js/main.js"></script>
+</body>
+</html>

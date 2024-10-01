@@ -1,0 +1,276 @@
+li{
+    list-style: none;
+}
+
+:root, [data-bs-theme=dark]{
+    --background: #1e1e1e;
+    --color-link:#ffffff;
+}
+
+[data-bs-theme=light]{
+    --background:#E0E8F6;
+    --color-link:#050505;
+}
+
+/* Header */
+header{
+    position: fixed;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 2rem;
+    width: 100vw;
+    height: 60px;
+    background: var(--background);
+    z-index: 2000;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .link{
+    display: flex;
+    gap: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-link);
+    font-size: 1rem;
+    display: inline-block;
+    transition: .2s;
+}
+
+a:hover{
+    color: #acacac;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.navbar #curriculo-icon{
+    width: 28px;
+    height: 31px;
+}
+
+.navbar #github-icon{
+    width: 31px;
+    height: 34px;
+}
+
+.navbar #linkedin-icon{
+    width: 38px;
+    height: 33px;
+}
+
+.navbar .tema-claro{
+    display: none;
+    margin-right: 30px;
+}
+
+.menu-amburguer{
+    display: none;
+}
+
+.tema-claro button{
+background-color: transparent;
+        border: none;
+        cursor: pointer;
+}
+
+
+/*----MENU MOBILE----*/
+.menu-mobile {
+    direction: ltr;
+    display: none;
+    position: absolute;
+    left: 0.5rem;
+    top: 55px;
+    width: 195px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 16px;
+    padding: 8px 24px 24px;
+    color: #191919;
+    background-color: rgba(255, 255, 255, 0.74);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+    z-index: 1030;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.menu-mobile:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 110px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 12px solid transparent;
+    border-bottom: 10px solid rgba(255, 255, 255, 0.74);
+    border-left: 12px solid transparent;
+}
+
+.nav-itens .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
+    margin-top: 40px;
+}
+
+.nav-itens .contatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-itens .contatos #curriculo-icon{
+    width: 27px;
+    height: 30px;
+    margin-right: 7px;
+}
+
+.nav-itens .contatos #github-icon{
+    width: 33px;
+    height: 33px;
+    margin-right: 7px;
+}
+
+.nav-itens .contatos #linkedin-icon{
+    width: 31px;
+    height: 32px;
+}
+
+/*---Responsividade---*/
+@media screen and (max-width: 925px) {
+    a{
+        font-size: 14px;
+    }
+
+    .navbar .link{
+        gap: 1.5rem;
+    }
+
+    .navbar #curriculo-icon{
+        width: 26px;
+        height: 29px;
+    }
+    
+    .navbar #github-icon{
+        width: 29px;
+        height: 32px;
+    }
+    
+    .navbar #linkedin-icon{
+        width: 36px;
+        height: 31px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    a{
+        font-size: 13px;
+    }
+
+    .navbar .link{
+        gap: 1.2rem;
+    }
+
+    .navbar #curriculo-icon{
+        width: 24px;
+        height: 27px;
+    }
+    
+    .navbar #github-icon{
+        width: 27px;
+        height: 30px;
+    }
+    
+    .navbar #linkedin-icon{
+        width: 34px;
+        height: 29px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .navbar .link , .icons-container{
+        display: none;
+    }
+    /*.navbar .tema-claro {
+        order: 2;
+    }*/
+
+    .navbar .menu-amburguer {
+        display: block;
+        height: 15px;
+        margin-left: 35px;
+    }
+
+    .menu-amburguer button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-amburguer button img{
+        width: 20px;
+        height: 20px;
+    } 
+
+    .open{
+        display: block;
+        height: 45vh;
+    }
+
+    a{
+        color: #000000;
+        font-size: 20px;
+        margin-top: 6px;
+    }
+
+    a:hover{
+        color: #807e7e;
+    }
+} 
+
+@media screen and (max-width: 430px) {
+    .menu-mobile {
+        width: 160px;
+        border-radius: 10px;
+    }
+    
+    .menu-mobile:before {
+        right: 80px;
+    }
+    
+    .nav-itens .links{
+        margin-top: 30px;
+    }
+    
+    .nav-itens .contatos{
+        margin-top: 15px;
+    }
+
+    .open{
+        height: 36vh;
+    }
+    
+    a{
+        font-size: 16.5px;
+    }
+    
+} 
+

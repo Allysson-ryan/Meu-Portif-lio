@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/x-icon" href="../../assets/img/favicon.png">
+    <title>Thank you!</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="btn-voltarMenu">
+                <a href="../../index.html">
+                    <button> Home </button>
+                </a>
+            </div>
+            
+            <div class="lomarca"> 
+                <img src="../../assets/img/logomarca.png" > 
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1> Agradeço por entrar em contato </h1>
+        <p> Em breve, retornarei com uma resposta. </p>
+    </div>
+</body>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); 
+    * {
+    background: #1E1E1E;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.btn-voltarMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-voltarMenu button{
+    font-family: "Poppins", sans-serif;
+    color: #E1E1E1;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 8px;
+    border-color: #4FC3F7;
+    background: transparent;
+    font-size: 15px;
+}
+
+.btn-voltarMenu button:hover{
+    background: linear-gradient(to right, #4FC3F7, #a8a8a8);
+    color: #202020;
+    Font-weight:500;
+}
+
+.lomarca{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 2rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+h1{
+    color: #A9A9A9;
+    font-size: 60px;
+}
+
+p{
+    font-size: 30px;
+    font-weight: 500;
+    align-items: center;
+    background: linear-gradient(to right, #4FC3F7, #FFFFFF);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    text-align: center;
+}
+
+/*Responsividade*/
+@media screen and (max-width: 980px) {
+    h1{font-size: 50px}
+    p{font-size: 25px;}
+}
+
+@media screen and (max-width: 800px) {
+    h1{ font-size: 37px}
+    p{ font-size: 18.5px}
+}
+
+@media screen and (max-width: 800px) {
+    h1{ font-size: 37px }
+    p{ font-size: 18.5px}
+}
+
+@media screen and (max-width: 615px) {
+    .btn-voltarMenu button{
+    width: 4.5rem;
+    height: 1.5rem;
+    font-size: 13px;
+}
+    .lomarca img{
+    width: 45px;
+    height: 25px
+}
+    h1{ 
+        font-size: 30px
+}
+    p{ 
+        font-size: 15px
+}
+
+@media screen and (max-width: 490px) {
+    h1{ font-size: 25px }
+    p{ font-size: 12.5px}
+}
+
+@media screen and (max-width: 400px) {
+    h1{ font-size: 20px }
+    p{ font-size: 10px}
+}
+
+
+}
+
+</style>
+
+</html>
